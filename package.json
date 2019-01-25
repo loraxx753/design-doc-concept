@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "_transpile": "rollup public/_assets/scripts/main.js --file public/_assets/scripts/.transpiled.js --format umd --name 'design-language' --watch",
-    "_babel-it": "npx babel ./public/_assets/scripts/.transpiled.js --out-file ./public/_assets/scripts/.legacy.js --presets=@babel/env",
+    "_transpile": "rollup public/_/scripts/main.js --file public/_/scripts/.transpiled.js --format umd --name 'design-language' --watch",
+    "_babel-it": "npx babel ./public/_/scripts/.transpiled.js --out-file ./public/_/scripts/.legacy.js --presets=@babel/env",
     "_legacy": "npm run _babel-it && echo '.legacy.js built for legacy browsers' ",
     "deploy": "surge ./public",
     "preview": "npm run preview:legacy",

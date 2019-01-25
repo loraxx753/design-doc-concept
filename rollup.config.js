@@ -3,9 +3,9 @@ import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
-  input: './_assets/scripts/main.js',
+  input: './_/scripts/main.js',
   output: {
-    file: './_assets/es2015/transpiled.js',
+    file: './_/es2015/transpiled.js',
     format: 'iife'
   },
   plugins: [
