@@ -97,7 +97,7 @@ pre code { display: block; white-space: pre; }
 span { font-size: inherit; font-weight: inherit; }
 div, section, article, aside {display: block;}
 summary:hover { cursor: pointer; }
-dialog[data-popup] { position: fixed;}
+dialog[data-popup] {position: fixed;left: 0;right: 0;}
 dialog[data-popup]::backdrop {
     background: var(--color-primary, black);
     filter: opacity(50%);
