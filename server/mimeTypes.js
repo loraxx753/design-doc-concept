@@ -1,6 +1,7 @@
 module.exports = {
     '.html': 'text/html',
     '.js': 'text/javascript',
+    '.json': 'application/json',
     '.css': 'text/css',
     '.json': 'application/json',
     '.png': 'image/png',

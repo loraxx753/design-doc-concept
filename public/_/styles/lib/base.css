@@ -175,3 +175,5 @@ button[data-accent]:active {
     filter: brightness(93%);
 }
 
+b { font-weight: bold; }
+i { font-style: italic; }
