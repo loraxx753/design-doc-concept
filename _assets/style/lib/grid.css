@@ -1,0 +1,24 @@
+/* A Complete Guide to Grid - CSS Tricks. https://css-tricks.com/snippets/css/complete-guide-grid/ */ 
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 80vh 10vh;
+  grid-template-areas: 
+    'header'
+    'screen'
+    'input';
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: screen;
+}
+
+
+footer {
+  grid-area: input;
+}

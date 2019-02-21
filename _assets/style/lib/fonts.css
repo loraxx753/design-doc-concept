@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|ZCOOL+QingKe+HuangYou');
+
+@font-face {
+    font-family: 'Arcade';
+    src: url('./fonts/ARCADE.TTF');
+}
+@font-face {
+	font-family: 'Apple II';
+	src: url('./fonts/AppleII.ttf');
+}
+@font-face {
+	font-family: 'braille outline';
+	src: url('./fonts/braille_outline.ttf');
+}
+@font-face {
+	font-family: 'braille';
+	src: url('./fonts/braille.ttf');
+}
+@font-face {
+	font-family: 'cubicfive10';
+	src: url('./fonts/cubicfive10.ttf');
+}
+@font-face {
+	font-family: 'cubicfive11';
+	src: url('./fonts/cubicfive11.ttf');
+}
+@font-face {
+	font-family: 'cubicfive12';
+	src: url('./fonts/cubicfive12.ttf');
+}
+@font-face {
+	font-family: 'cubicfive18';
+	src: url('./fonts/cubicfive18.ttf');
+}
+@font-face {
+	font-family: 'hellovetica';
+	src: url('./fonts/hellovetica.ttf');
+}
+@font-face {
+	font-family: 'pixelsix00';
+	src: url('./fonts/pixelsix00.ttf');
+}
+@font-face {
+	font-family: 'squaredance00';
+	src: url('./fonts/squaredance00.ttf');
+}
+@font-face {
+	font-family: 'squaredance01';
+	src: url('./fonts/squaredance01.ttf');
+}
+@font-face {
+	font-family: 'squaredance03';
+	src: url('./fonts/squaredance03.ttf');
+}
+@font-face {
+	font-family: 'squaredance10';
+	src: url('./fonts/squaredance10.ttf');
+}
+@font-face {
+	font-family: 'superscript';
+	src: url('./fonts/SUPERSCR.ttf');
+}

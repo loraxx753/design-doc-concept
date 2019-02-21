@@ -4,13 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "_transpile": "rollup public/_/scripts/main.js --file public/_/scripts/.transpiled.js --format umd --name 'design-language' --watch",
-    "_babel-it": "npx babel ./public/_/scripts/.transpiled.js --out-file ./public/_/scripts/.legacy.js --presets=@babel/env",
-    "_legacy": "npm run _babel-it && echo '.legacy.js built for legacy browsers' ",
-    "deploy": "surge ./public",
-    "preview": "npm run preview:legacy",
-    "preview:legacy": "npm run _legacy && http-server ./public",
-    "start": "npm run _transpile & node ./server/start.js",
+    "preview": "surge ./app",
+    "start": "http-server .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,15 +13,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-transform-arrow-functions": "^7.2.0",
-    "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.2.3",
-    "@webcomponents/webcomponentsjs": "^2.2.3",
-    "http-server": "^0.11.1",
-    "rollup": "^1.1.0",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-json": "^3.1.0"
+    "http-server": "^0.11.1"
   }
 }
