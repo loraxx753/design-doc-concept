@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preview": "surge ./app",
+    "preview": "surge ./app --domain qa-silence.surge.sh",
     "start": "http-server .",
+    "publish": "surge ./app",
+    "with::surge": "npm i --save-dev surge",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "surge": "^0.20.1"
   }
 }

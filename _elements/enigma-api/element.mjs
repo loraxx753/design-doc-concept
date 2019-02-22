@@ -1,14 +1,17 @@
+import enigma from '../../_assets/data/enigma.js'
+
 export default class extends HTMLElement {
     constructor() {
         super()
-        this.apikey = window.sessionStorage.getItem('apikey') || false
 
     }
 
     static get observedAttributes() {  }
 
     async authenticate() { 
+        
         return new Promise((resolve, reject) => Array('User', 'Password').map(txt => {
+
             const p = this[txt.toLowerCase()] = document.createElement('p')
             p.contentEditable = 'true'
             p.innerText = txt
@@ -44,10 +47,13 @@ export default class extends HTMLElement {
     }
 
     async buildDataSet() {
+        console.log(enigma.collection())
         this.innerHTML = `You've either just logged in or your session is still active` 
     }
 
     async connectedCallback() {
+        this.apikey = window.sessionStorage.getItem('apikey') || false
+
         if(!this.apikey) {
             await this.authenticate()
         }
